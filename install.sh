@@ -20,9 +20,12 @@ rm -rf /home/${USER}/domains/${USER}.serv00.net
 devil www add ${USER}.serv00.net nodejs $(command -v node22) production
 # 安装网页
 mv /home/${USER}/domains/${USER}.serv00.net/public_nodejs/public /home/${USER}/domains/${USER}.serv00.net/public_nodejs/static
-curl -sL https://raw.githubusercontent.com/benzBrake/Keep-Serv00-Alive/master/app.js -o /home/${USER}/domains/${USER}.serv00.net/public_nodejs/index.js
+curl -sL https://raw.githubusercontent.com/benzBrake/Keep-Serv00-Alive/master/app.js -o /home/${USER}/domains/${USER}.serv00.net/public_nodejs/app.js
 sed "s/USERNAME_TO_REPLACE/${USER}/g" /home/${USER}/domains/${USER}.serv00.net/public_nodejs/index.js
+cd /home/${USER}/domains/${USER}.serv00.net/public_nodejs
+npm22 install express
 
+# 访问网页
 curl -sL https://${USER}.serv00.net
 
 # 显示所有进程
