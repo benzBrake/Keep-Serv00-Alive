@@ -1,6 +1,6 @@
 # Serv00服务器不优雅的保活方案
 
-方案来自[[hkfires/Keep-Serv00-Alive](hkfires/Keep-Serv00-Alive)]，但是因为都是写死保活什么程序，用起来不方便，所以结合 AI 改成了保活 pm2 的版本，同时也弄了一键安装脚本。
+方案来自[[hkfires/Keep-Serv00-Alive](https://github.com/hkfires/Keep-Serv00-Alive)]，但是因为都是写死保活什么程序，用起来不方便，所以结合 AI 改成了保活 pm2 的版本，同时也弄了一键安装脚本。
 
 ## 使用注意
 
