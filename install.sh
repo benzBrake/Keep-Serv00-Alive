@@ -29,7 +29,7 @@ devil www add ${LC_USERNAME}.serv00.net nodejs $(command -v node22) production
 # 安装网页
 mv /home/${USERNAME}/domains/${LC_USERNAME}.serv00.net/public_nodejs/public /home/${USERNAME}/domains/${LC_USERNAME}.serv00.net/public_nodejs/static
 curl -sL https://raw.githubusercontent.com/benzBrake/Keep-Serv00-Alive/master/app.js -o /home/${USERNAME}/domains/${LC_USERNAME}.serv00.net/public_nodejs/app.js
-sed "s/USERNAME_TO_REPLACE/${USERNAME}/g" /home/${USERNAME}/domains/${LC_USERNAME}.serv00.net/public_nodejs/app.js
+sed -i '' "s/USERNAME_TO_REPLACE/${USERNAME}/g" "/home/${USERNAME}/domains/${LC_USERNAME}.serv00.net/public_nodejs/app.js"
 cd /home/${USERNAME}/domains/${LC_USERNAME}.serv00.net/public_nodejs
 npm22 install express
 
